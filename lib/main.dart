@@ -6,7 +6,7 @@ import 'package:ustabuul/auth/alan_register.dart';
 // ignore: unused_import
 import 'package:ustabuul/auth/register_screen.dart';
 // ignore: unused_import
-import 'package:ustabuul/auth/veren_register.dart';sdffsd
+import 'package:ustabuul/auth/veren_register.dart';
 import 'package:ustabuul/screens/main_srceen.dart';
 // ignore: unused_import
 import 'package:ustabuul/screens/navigation_Screens/home_srceen.dart';
