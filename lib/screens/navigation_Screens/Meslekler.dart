@@ -1,5 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+ // doğru yolu kendi dosya yapına göre düzelt
+
 
 class MesleklerSayfasi extends StatefulWidget {
   final String? adi;
@@ -177,13 +179,7 @@ class _MesleklerSayfasiState extends State<MesleklerSayfasi> {
     return Scaffold(
       appBar: AppBar(title: const Text("Meslekler")),
       body: Container(
-        decoration: const BoxDecoration(
-          image: DecorationImage(
-            image: NetworkImage(
-                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBzQgueaBg4Jd3QS1Z04wFFdbuIbIF4NJy-Q&s"),
-            fit: BoxFit.cover,
-          ),
-        ),
+       
         child: Padding(
           padding: const EdgeInsets.all(12),
           child: Column(
