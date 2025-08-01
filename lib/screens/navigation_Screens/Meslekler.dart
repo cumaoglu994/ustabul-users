@@ -1,7 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
- // doğru yolu kendi dosya yapına göre düzelt
-
+import 'boya_badana_teklif_sayfasi.dart';
 
 class MesleklerSayfasi extends StatefulWidget {
   final String? adi;
@@ -77,6 +76,18 @@ class _MesleklerSayfasiState extends State<MesleklerSayfasi> {
     return Center(
       child: ElevatedButton.icon(
         onPressed: () async {
+          // Boyacı butonuna tıklandığında teklif sayfasına yönlendir
+          if (meslek['isim'] == 'Boyacı') {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const BoyaBadanaTeklifSayfasi(),
+              ),
+            );
+            return;
+          }
+
+          // Diğer meslekler için mevcut Firebase işlemi
           String? buyerId = meslek['buyerId'];
           if (buyerId == null) return;
 
