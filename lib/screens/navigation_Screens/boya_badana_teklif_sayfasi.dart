@@ -165,7 +165,8 @@ class _BoyaBadanaTeklifSayfasiState extends State<BoyaBadanaTeklifSayfasi> {
       ),
     );
   }
-
+// Method to create the offer
+  // This method can be modified to send the data to a server or save it locally  
   void _teklifiOlustur() {
     final teklif = {
       'oda_sayisi': selectedOdaSayisi,
