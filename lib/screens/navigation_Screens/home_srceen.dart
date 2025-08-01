@@ -19,7 +19,7 @@ class HomeScreen extends StatelessWidget {
           children: [
             const SizedBox(height: 20),
             const WelcomeText(),
-            SearchInput(),
+            SearchInput(),// Arama çubuğu
            const BannerWidget(),
             const SizedBox(height: 40),
            Center(
