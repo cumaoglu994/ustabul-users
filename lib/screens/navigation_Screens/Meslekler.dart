@@ -11,7 +11,8 @@ class MesleklerSayfasi extends StatefulWidget {
   
   final String? telefonNo;
   final String? Konum;
-
+// Bu değişkenler, meslek bilgilerini tutmak için kullanılır.
+  // Meslek bilgilerini tutmak için kullanılır. 
   const MesleklerSayfasi({
     super.key,
     this.adi,
