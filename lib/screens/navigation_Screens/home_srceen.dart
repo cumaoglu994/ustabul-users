@@ -1,3 +1,6 @@
+
+
+/*
 import 'package:flutter/material.dart';
 import 'package:ustabuul/screens/Widget/banner_widget.dart';
 import 'package:ustabuul/screens/Widget/category_widget.dart';
@@ -51,6 +54,40 @@ class HomeScreen extends StatelessWidget {
        
           ],
         ),
+      ),
+    );
+  }
+}
+*/
+import 'package:flutter/material.dart';
+import 'meslek_teklif_sayfasi.dart'; // Dinamik Stepper kodunun bulunduğu dosya
+
+class AnaSayfa extends StatelessWidget {
+  const AnaSayfa({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final List<String> meslekler = ['boyaci', 'elektrikci', 'su_tesisatcisi'];
+
+    return Scaffold(
+      appBar: AppBar(title: const Text("Meslek Seç")),
+      body: ListView.builder(
+        itemCount: meslekler.length,
+        itemBuilder: (context, index) {
+          final meslek = meslekler[index];
+          return ListTile(
+            title: Text(meslek.toUpperCase()),
+            trailing: const Icon(Icons.arrow_forward),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (_) => MeslekTeklifSayfasi(meslekAdi: meslek),
+                ),
+              );
+            },
+          );
+        },
       ),
     );
   }

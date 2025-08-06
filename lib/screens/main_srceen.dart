@@ -19,7 +19,7 @@ class _HomeScreenState extends State<MainScreen> {
 
   // HomeScreen'i kendisiyle tekrar çağırmamak için buraya başka bir ekran ekleyin
   final List<Widget> _pages = [
-    HomeScreen(),
+    AnaSayfa(),
     CategoriesScreen(),
     TasksScreen(),
     NotificationSrceen(),
